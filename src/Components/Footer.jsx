@@ -6,6 +6,12 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import {
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+  AiFillGooglePlusCircle,
+} from "react-icons/ai";
 import "./Footer.css";
 
 const Footer = () => {
@@ -49,6 +55,39 @@ const Footer = () => {
             Sunday: Closed
           </p>
         </div>
+      </div>
+      <div className='social-icons'>
+        <a
+          href='https://www.facebook.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <AiFillFacebook className='icon' />
+        </a>
+        <a
+          href='https://www.linkedin.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <AiFillLinkedin className='icon' />
+        </a>
+        <a
+          href='https://www.twitter.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <AiOutlineTwitter className='icon' />
+        </a>
+        <a
+          href='https://www.google.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <AiFillGooglePlusCircle className='icon' />
+        </a>
+      </div>
+      <div className='footer-text'>
+        &copy; {new Date().getFullYear()} Your Company. All rights reserved.
       </div>
     </footer>
   );

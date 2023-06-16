@@ -7,6 +7,7 @@ const HeroImage = ({ imageUrl, children }) => {
   const heroImageStyles = {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     height: isHomePage ? "100vh" : "50vh",
     width: "100vw",

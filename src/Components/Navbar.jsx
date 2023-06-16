@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import {
-  RiMenuLine,
-  RiCloseLine,
-  RiArrowDropDownLine,
-  RiArrowDropUpLine,
-} from "react-icons/ri";
+import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleDropdownToggle = () => {
-    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const closeMenu = () => {
@@ -74,19 +64,15 @@ const Navbar = () => {
               Industry
             </NavLink>
           </li>
-          <li className={`dropdown ${isDropdownOpen ? "open" : ""}`}>
-            <div className='dropdown-toggle' onClick={handleDropdownToggle}>
+          <li>
+            <NavLink
+              to='/products'
+              className='dropdown-toggle'
+              activeClassName='active'
+              onClick={closeMenu}
+            >
               Products
-              {isDropdownOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
-            </div>
-            <div className={`dropdown-content ${isDropdownOpen ? "open" : ""}`}>
-              <NavLink to='/products/type1' activeClassName='active'>
-                Type 1
-              </NavLink>
-              <NavLink to='/products/type2' activeClassName='active'>
-                Type 2
-              </NavLink>
-            </div>
+            </NavLink>
           </li>
           <li>
             <NavLink to='/contact' activeClassName='active' onClick={closeMenu}>
