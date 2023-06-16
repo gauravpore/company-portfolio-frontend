@@ -1,15 +1,17 @@
 import React from "react";
 import HeroImage from "../Components/HeroImage";
 import HeroPageImage from "../Assets/HomePageImage.jpg";
+import Title from "../Components/TitleComponent";
 import "./HomePage.css";
 
-// import HomeContent from "../Components/HomeContent";
+import HomeContent from "../Components/HomeContent";
 const HomePage = () => {
   return (
     <div>
       <HeroImage imageUrl={HeroPageImage}>
-        <h1>Home</h1>
+        <Title text={"Home"} />
       </HeroImage>
+      <HomeContent />
     </div>
   );
 };

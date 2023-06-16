@@ -17,7 +17,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='container'>
+      <div className='footer-container'>
         <div className='section'>
           <h3>
             <FaInfoCircle className='icon' /> About Us
