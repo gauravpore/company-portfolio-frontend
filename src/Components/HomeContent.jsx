@@ -1,21 +1,31 @@
 import React from "react";
 import "./HomeContent.css";
+import { TiTime } from "react-icons/ti";
+import { GiCutDiamond } from "react-icons/gi";
+import { FaThumbsUp } from "react-icons/fa";
+
 import macro from "../Assets/macro.jpg";
 import people from "../Assets/people.jpg";
 import electrician from "../Assets/electrician.jpg";
 
-const images = [
+const data = [
   {
-    id: 1,
-    imageUrl: { macro },
+    icon: <FaThumbsUp />,
+    heading: "RELIABILITY",
+    content:
+      "Our company is renowned for its unwavering reliability in the adhesive industry, consistently delivering on-time solutions that exceed customer expectations.",
   },
   {
-    id: 2,
-    imageUrl: { people },
+    icon: <TiTime />,
+    heading: "EXPERTISE",
+    content:
+      "Our knowledgeable team delivers tailored adhesive solutions, staying at the forefront of industry advancements.",
   },
   {
-    id: 3,
-    imageUrl: { electrician },
+    icon: <GiCutDiamond />,
+    heading: "QUALITY",
+    content:
+      "Our rigorous quality control measures ensure superior adhesive performance, durability, and safety, earning the trust of our clients.",
   },
 ];
 
@@ -24,20 +34,27 @@ const HomeContent = () => {
     <div className='Home-Container'>
       <div className='Home-title'>
         <h1>Why Choose us?</h1>
-        <div></div>
+        <div className='title-underline'></div>
       </div>
-      <div className='image-container'>
-        {images.map((image) => (
-          <div
-            className={`image-item ${
-              image.id === 1 ? "full-height" : "half-height"
-            }`}
-            key={image.id}
-            style={{ backgroundImage: `url(${image.imageUrl})` }}
-          />
-        ))}
+      <div className='home-whyChooseUs'>
+        <div className='image-container'>
+          <img src={macro} alt='marco' className='marco' />
+
+          <img src={people} alt='people' />
+          <img src={electrician} alt='people' />
+        </div>
+        <div className='home-whyChooseUs-right'>
+          {data.map((item, index) => (
+            <div className='whyChooseUs-content' key={index}>
+              <div className='icon'>{item.icon}</div>
+              <div className=''>
+                <h2>{item.heading}</h2>
+                <p>{item.content}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className='home-right'></div>
     </div>
   );
 };
