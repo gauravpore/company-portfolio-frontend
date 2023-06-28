@@ -55,15 +55,7 @@ const Navbar = () => {
               About Us
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to='/industry'
-              activeClassName='active'
-              onClick={closeMenu}
-            >
-              Industry
-            </NavLink>
-          </li>
+
           <li>
             <NavLink
               to='/products'
