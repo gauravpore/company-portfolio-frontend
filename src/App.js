@@ -7,7 +7,14 @@ import IndustryPage from "./Pages/IndustryPage";
 import ContactPage from "./Pages/ContactPage";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className='App'>
       <Navbar />

@@ -37,7 +37,16 @@ const HomeContent = () => {
         <div className='title-underline'></div>
       </div>
       <div className='home-whyChooseUs'>
-        <div className='image-container'>
+        <div
+          className='image-container'
+          data-aos='fade-right'
+          data-aos-offset='200'
+          data-aos-delay='50'
+          data-aos-duration='1000'
+          data-aos-easing='ease-in-out'
+          data-aos-mirror='true'
+          data-aos-once='false'
+        >
           <img src={macro} alt='marco' className='marco' />
 
           <img src={people} alt='people' />
@@ -45,7 +54,17 @@ const HomeContent = () => {
         </div>
         <div className='home-whyChooseUs-right'>
           {data.map((item, index) => (
-            <div className='whyChooseUs-content' key={index}>
+            <div
+              className='whyChooseUs-content'
+              data-aos='fade-left'
+              data-aos-offset='200'
+              data-aos-delay='50'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'
+              data-aos-mirror='true'
+              data-aos-once='false'
+              key={index}
+            >
               <div className='icon'>{item.icon}</div>
               <div className=''>
                 <h2>{item.heading}</h2>

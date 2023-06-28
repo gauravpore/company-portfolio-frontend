@@ -1,0 +1,29 @@
+.HomePageTitle-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomePageTitle-Container h2 {
+  font-size: 3em;
+  z-index: 2;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(../Assets/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .HomePageTitle-Container h2 {
+    font-size: 2em;
+  }
+}

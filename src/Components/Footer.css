@@ -2,6 +2,7 @@
   background-color: #333;
   color: white;
   padding: 40px 0;
+  width: 100%;
 }
 
 .footer-container {
@@ -88,6 +89,7 @@ p {
 
 @media (max-width: 480px) {
   h3 {
+    max-width: 100%;
     font-size: 18px;
   }
 }
