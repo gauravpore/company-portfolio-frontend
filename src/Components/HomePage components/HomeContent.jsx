@@ -4,6 +4,9 @@ import { TiTime } from "react-icons/ti";
 import { GiCutDiamond } from "react-icons/gi";
 import { FaThumbsUp } from "react-icons/fa";
 
+// logo carusal
+import LogoCarousel from "./LogoCarousel";
+
 import macro from "../../Assets/macro.jpg";
 import people from "../../Assets/people.jpg";
 import electrician from "../../Assets/electrician.jpg";
@@ -74,6 +77,7 @@ const HomeContent = () => {
           ))}
         </div>
       </div>
+      <LogoCarousel />
     </div>
   );
 };

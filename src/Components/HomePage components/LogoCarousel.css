@@ -1,0 +1,60 @@
+.logo-carousel-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.logo-carousel-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo-image {
+  display: block;
+  max-width: 80%;
+  height: 50px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.logo-slide {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 100px;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
