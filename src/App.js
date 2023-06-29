@@ -1,12 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ProductsPage from "./Pages/ProductsPage";
 import ContactPage from "./Pages/ContactPage";
-import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import { useEffect } from "react";
+import ScrollUpButton from "./Components/UI components/ScrollUpButton";
 
 // scroll animation libray
 import AOS from "aos";
@@ -23,10 +25,10 @@ function App() {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/products' element={<ProductsPage />} />
-
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
       <Footer />
+      <ScrollUpButton />
     </div>
   );
 }

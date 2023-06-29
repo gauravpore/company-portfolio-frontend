@@ -1,0 +1,41 @@
+.scroll-up-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-up-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-up-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.scroll-up-button:hover {
+  background-color: #555;
+}
+
+.arrow-up {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scroll-up-button:hover .arrow-up {
+  transform: scale(1.2);
+}
