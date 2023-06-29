@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImage from "../Components/HeroImage";
+import HeroImage from "../Components/UI components/HeroImage";
 import ContactUsImage from "../Assets/ContactUsImage.jpg";
-import Title from "../Components/TitleComponent";
+import Title from "../Components/UI components/TitleComponent";
 const ContactPage = () => {
   return (
     <div>

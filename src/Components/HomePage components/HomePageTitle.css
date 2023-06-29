@@ -10,7 +10,7 @@
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
-  background: url(../Assets/back.png);
+  background: url(../../Assets/back.png);
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 30s linear infinite;

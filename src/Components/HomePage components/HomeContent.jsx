@@ -4,9 +4,9 @@ import { TiTime } from "react-icons/ti";
 import { GiCutDiamond } from "react-icons/gi";
 import { FaThumbsUp } from "react-icons/fa";
 
-import macro from "../Assets/macro.jpg";
-import people from "../Assets/people.jpg";
-import electrician from "../Assets/electrician.jpg";
+import macro from "../../Assets/macro.jpg";
+import people from "../../Assets/people.jpg";
+import electrician from "../../Assets/electrician.jpg";
 
 const data = [
   {

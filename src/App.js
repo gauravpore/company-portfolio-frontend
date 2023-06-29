@@ -1,13 +1,14 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ProductsPage from "./Pages/ProductsPage";
-import IndustryPage from "./Pages/IndustryPage";
 import ContactPage from "./Pages/ContactPage";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 import { useEffect } from "react";
+
+// scroll animation libray
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,7 +23,7 @@ function App() {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/products' element={<ProductsPage />} />
-        <Route path='/industry' element={<IndustryPage />} />
+
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
       <Footer />

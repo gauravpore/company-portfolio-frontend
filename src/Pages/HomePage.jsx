@@ -1,10 +1,10 @@
 import React from "react";
-import HeroImage from "../Components/HeroImage";
+import HeroImage from "../Components/UI components/HeroImage";
 import HeroPageImage from "../Assets/HomePageImage.jpg";
 
-import HomePageTitle from "../Components/HomePageTitle";
+import HomePageTitle from "../Components/HomePage components/HomePageTitle";
 
-import HomeContent from "../Components/HomeContent";
+import HomeContent from "../Components/HomePage components/HomeContent";
 const HomePage = () => {
   return (
     <div>
