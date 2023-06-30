@@ -4,68 +4,73 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./LogoCarousel.css";
 
-// import Logo1 from "../../Assets/logos/3m.svg";
-// import Logo2 from "../../Assets/logos/barstool-store.svg";
-// import Logo3 from "../../Assets/logos/budweiser.svg";
-// import Logo4 from "../../Assets/logos/forbes.svg";
-// import Logo5 from "../../Assets/logos/macys.svg";
-// import Logo6 from "../../Assets/logos/menshealth.svg";
-// import Logo7 from "../../Assets/logos/mrbeast.svg";
+import HPAdhesivesLogo from "../../Assets/logos/HP_adhesives.png";
+import NerolacLogo from "../../Assets/logos/NEROLAC-LOGO.png";
+import FirstChemLogo from "../../Assets/logos/first_chem.png";
+import PPGAsianPaintsLogo from "../../Assets/logos/ppg_asian_paints.png";
+import UCILLogo from "../../Assets/logos/ucil.png";
 
 const LogoCarousel = () => {
   const logos = [
-    { id: 1, src: require("../../Assets/logos/3m.svg").default, alt: "Logo 1" },
+    {
+      id: 1,
+      src: HPAdhesivesLogo,
+      alt: "HP Adhesives",
+    },
     {
       id: 2,
-      src: require("../../Assets/logos/barstool-store.svg").default,
-      alt: "Logo 2",
+      src: NerolacLogo,
+      alt: "Nerolac",
     },
     {
       id: 3,
-      src: require("../../Assets/logos/budweiser.svg").default,
-      alt: "Logo 3",
+      src: FirstChemLogo,
+      alt: "First Chem",
     },
     {
       id: 4,
-      src: require("../../Assets/logos/buzzfeed.svg").default,
-      alt: "Logo 4",
+      src: PPGAsianPaintsLogo,
+      alt: "PPG Asian Paints",
     },
     {
       id: 5,
-      src: require("../../Assets/logos/forbes.svg").default,
-      alt: "Logo 5",
-    },
-    {
-      id: 6,
-      src: require("../../Assets/logos/macys.svg").default,
-      alt: "Logo 6",
-    },
-    {
-      id: 7,
-      src: require("../../Assets/logos/mrbeast.svg").default,
-      alt: "Logo 6",
+      src: UCILLogo,
+      alt: "UCIL",
     },
   ];
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 992, // Adjust the breakpoint as per your requirements
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3, // Show 3 slides on screens with width less than 992px
+        },
+      },
+      {
+        breakpoint: 768, // Adjust the breakpoint as per your requirements
+        settings: {
+          slidesToShow: 2, // Show 2 slides on screens with width less than 768px
+        },
+      },
+      {
+        breakpoint: 480, // Adjust the breakpoint as per your requirements
+        settings: {
+          slidesToShow: 1, // Show 1 slide on screens with width less than 480px
         },
       },
     ],

@@ -34,50 +34,52 @@ const data = [
 
 const HomeContent = () => {
   return (
-    <div className='Home-Container'>
-      <div className='Home-title'>
-        <h1>Why Choose us?</h1>
-        <div className='title-underline'></div>
-      </div>
-      <div className='home-whyChooseUs'>
-        <div
-          className='image-container'
-          data-aos='fade-right'
-          data-aos-offset='200'
-          data-aos-delay='50'
-          data-aos-duration='1000'
-          data-aos-easing='ease-in-out'
-          data-aos-mirror='true'
-          data-aos-once='false'
-        >
-          <img src={macro} alt='marco' className='marco' />
+    <div className='Content-container'>
+      <div className='Home-Container'>
+        <div className='Home-title'>
+          <h1>Why Choose us?</h1>
+          <div className='underline'></div>
+        </div>
+        <div className='home-whyChooseUs'>
+          <div
+            className='image-container'
+            data-aos='fade-right'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out'
+            data-aos-mirror='true'
+            data-aos-once='false'
+          >
+            <img src={macro} alt='marco' className='marco' />
 
-          <img src={people} alt='people' />
-          <img src={electrician} alt='people' />
-        </div>
-        <div className='home-whyChooseUs-right'>
-          {data.map((item, index) => (
-            <div
-              className='whyChooseUs-content'
-              data-aos='fade-left'
-              data-aos-offset='200'
-              data-aos-delay='50'
-              data-aos-duration='1000'
-              data-aos-easing='ease-in-out'
-              data-aos-mirror='true'
-              data-aos-once='false'
-              key={index}
-            >
-              <div className='icon'>{item.icon}</div>
-              <div className=''>
-                <h2>{item.heading}</h2>
-                <p>{item.content}</p>
+            <img src={people} alt='people' />
+            <img src={electrician} alt='people' />
+          </div>
+          <div className='home-whyChooseUs-right'>
+            {data.map((item, index) => (
+              <div
+                className='whyChooseUs-content'
+                data-aos='fade-left'
+                data-aos-offset='200'
+                data-aos-delay='50'
+                data-aos-duration='1000'
+                data-aos-easing='ease-in-out'
+                data-aos-mirror='true'
+                data-aos-once='false'
+                key={index}
+              >
+                <div className='icon'>{item.icon}</div>
+                <div className=''>
+                  <h2>{item.heading}</h2>
+                  <p>{item.content}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+        <LogoCarousel />
       </div>
-      <LogoCarousel />
     </div>
   );
 };

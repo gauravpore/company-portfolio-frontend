@@ -7,6 +7,7 @@
   background-color: transparent;
   transition: background-color 0.3s;
   font-weight: bold;
+  z-index: 2;
 }
 
 .navbar.scrolled {
