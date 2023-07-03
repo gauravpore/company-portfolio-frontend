@@ -24,10 +24,9 @@ const Footer = () => {
           </h3>
           <div className='underline'></div>
           <p>
-            At Samadhan group, we are dedicated to serving our customers with
-            products that embody Excellence and Economy. Our team is driven by
-            the ethos of doing the 'RIGHT THING FIRST TIME AND EVERY TIME,'
-            fostering a spirit of teamwork and motivation among our employees.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            gravida augue id semper consequat. Aliquam erat volutpat. In hac
+            habitasse platea dictumst.
           </p>
         </div>
         <div className='section'>
@@ -36,13 +35,11 @@ const Footer = () => {
           </h3>
           <div className='underline'></div>
           <p>
-            <FaMapMarkerAlt className='icon' /> Nilkanth Ind. Estate, Survey No.
-            86, Plot No. 3, Village-Dhamni, Tal-Khalapur, Dist- Raigad,
-            Maharashtra. 410206
+            <FaMapMarkerAlt className='icon' /> 123 Street, City Name, Country
             <br />
-            <FaPhone className='icon' /> +91 9432648285
+            <FaPhone className='icon' /> +1 234 567 890
             <br />
-            <FaEnvelope className='icon' /> samadhantincontainers@gmail.com
+            <FaEnvelope className='icon' /> example@email.com
           </p>
         </div>
         <div className='section'>
@@ -90,7 +87,7 @@ const Footer = () => {
         </a>
       </div>
       <div className='footer-text'>
-        &copy; {new Date().getFullYear()} Samadhan group. All rights reserved.
+        &copy; {new Date().getFullYear()} Your Company. All rights reserved.
       </div>
     </footer>
   );

@@ -1,0 +1,71 @@
+.contact-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-us-details {
+  flex-basis: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-us-details h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-us-details p {
+  margin-bottom: 10px;
+}
+
+.contact-us-details p span {
+  font-weight: 700;
+}
+
+.map-container {
+  flex-basis: 50%;
+  height: 400px; /* Set an initial height */
+  margin-top: 20px;
+  position: relative; /* Add position relative to ensure map container works correctly */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.map-container #wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3 {
+  height: 100%;
+}
+
+.map-container a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-us-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+
+  .contact-us-details,
+  .map-container {
+    flex-basis: 100%;
+  }
+
+  .map-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}

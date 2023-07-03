@@ -12,7 +12,7 @@ function HomePageTitle() {
       data-aos-mirror='true'
       className='HomePageTitle-Container'
     >
-      <h2>Samadhan Tins & Containers </h2>
+      <h2>Samadhan Group </h2>
     </div>
   );
 }

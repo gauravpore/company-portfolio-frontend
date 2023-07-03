@@ -1,0 +1,81 @@
+.quality-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.quality-card {
+  flex-basis: calc(
+    33.33% - 20px
+  ); /* Adjust the width based on the number of cards you want in a row */
+  background-color: #f6f4f4;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px; /* Add right margin for gaps between cards */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding and borders in the width calculation */
+  position: relative; /* Add position relative for pseudo-elements */
+  overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+
+.quality-card:before,
+.quality-card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.quality-card:before {
+  z-index: 1;
+}
+
+.quality-card:after {
+  z-index: 2;
+}
+
+.quality-card:hover {
+  transform: scale(1.05); /* Apply scaling hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.quality-card:hover:before,
+.quality-card:hover:after {
+  border-color: #ccc; /* Set the desired border color */
+}
+
+.quality-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quality-card-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .quality-cards-container {
+    justify-content: center;
+  }
+
+  .quality-card {
+    flex-basis: calc(50% - 20px); /* Adjust the width for two cards in a row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quality-card {
+    flex-basis: 100%; /* Adjust the width for a single card in a row */
+    margin-right: 0; /* Remove right margin for the card */
+  }
+}

@@ -1,55 +1,131 @@
-.AboutUs-container {
+.about-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  z-index: 1;
+  margin: 50px auto;
 }
 
-.vision {
+.aboutus-section {
+  background: url(../../Assets/AboutUsImage.jpg) no-repeat left;
+  background-size: 90%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 50px 0;
+  border-radius: 20px;
+}
+
+.inner-container {
+  height: 40%;
+  width: 50%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 50px;
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px; */
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.vision-section {
+  padding: 20px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 50px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.AboutUs-container p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+.vision-content {
+  width: 50%;
+}
+
+.vision-content p {
   text-align: justify;
-  margin-top: 20px;
-}
-
-.AboutUs-container h2 {
-  margin-top: 20px;
-}
-
-.vision-content h1 {
-  position: relative;
+  line-height: 1.8rem;
 }
 
 .vision-image {
-  max-width: 50%;
+  padding: 20px;
+  width: 50%;
   height: auto;
-  border-radius: 4px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.vision-image {
+  flex: 1 1 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-image img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
-.aboutus span {
-  font-weight: 600;
-  margin-top: 20px;
+.vision-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .vision {
+  .vision-section {
     flex-direction: column;
+    gap: 40px;
   }
 
-  .AboutUs-container p {
-    font-size: 14px;
-  }
-
+  .vision-content,
   .vision-image {
-    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 60px;
   }
 }

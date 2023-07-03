@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className='container'>
         <Link to='/' className='logo'>
-          Logo
+          Samadhan Group
         </Link>
 
         <div

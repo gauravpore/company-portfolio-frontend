@@ -79,7 +79,7 @@ const LogoCarousel = () => {
   return (
     <div className='logo-carousel-container'>
       <div className='logo-carousel-title'>
-        <h1>Clients</h1>
+        <h1>Our Clients</h1>
         <div className='underline'></div>
       </div>
       <Slider {...settings}>
