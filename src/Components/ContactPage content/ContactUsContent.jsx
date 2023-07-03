@@ -7,23 +7,39 @@ const ContactUsContent = () => {
       className='contact-us-container'
       style={{
         marginTop: "40px",
+        marginBottom: "40px",
       }}
     >
       <div className='contact-us-details'>
-        <h2>Contact Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
-          euismod eros, vitae pellentesque velit aliquet et. Curabitur varius
-          felis ut felis vulputate fringilla.
+        <h1>Contact Us</h1>
+        <div className='underline'></div>
+        <br />
+        <p
+          style={{
+            textAlign: "justify",
+            lineHeight: "2",
+          }}
+        >
+          At Samadhan group, we are dedicated to serving our customers with
+          products that embody Excellence and Economy. Our team is driven by the
+          ethos of doing the 'RIGHT THING FIRST TIME AND EVERY TIME,' fostering
+          a spirit of teamwork and motivation among our employees.
         </p>
+        <br />
         <p>
-          Phone: <span>+123 456 7890</span>
+          Phone: <span>+91 9432648285</span>
         </p>
+        <br />
         <p>
-          Email: <span>info@example.com</span>
+          Email: <span>samadhantincontainers@gmail.com</span>
         </p>
+        <br />
         <p>
-          Address: <span>123 Main Street, City, Country</span>
+          Address:{" "}
+          <span>
+            Nilkanth Ind. Estate, Survey No. 86, Plot No. 3, Village-Dhamni,
+            Tal-Khalapur, Dist- Raigad, Maharashtra. 410206
+          </span>
         </p>
       </div>
       <iframe

@@ -14,7 +14,7 @@ const ProductCards = () => {
     {
       product_image:
         "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp",
-      product_name: "5 L Integrated Tin",
+      product_name: "50 Ml Brush In Tin",
       product_category: "Tin",
       product_description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
@@ -22,7 +22,7 @@ const ProductCards = () => {
     {
       product_image:
         "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp",
-      product_name: "10 L Integrated tin",
+      product_name: "118 Ml Brush In Tin",
       product_category: "Tin",
       product_description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
@@ -30,7 +30,7 @@ const ProductCards = () => {
     {
       product_image:
         "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp",
-      product_name: "5 L Integrated tin",
+      product_name: "1 Ltr Integrated Tin",
       product_category: "Tin",
       product_description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
@@ -38,7 +38,7 @@ const ProductCards = () => {
     {
       product_image:
         "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp",
-      product_name: "10 L Integrated tin",
+      product_name: "500 ML DT Tin",
       product_category: "Tin",
       product_description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
@@ -46,7 +46,7 @@ const ProductCards = () => {
     {
       product_image:
         "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp",
-      product_name: "10 L Integrated tin",
+      product_name: "1 Ltr Brush In Tin",
       product_category: "Tin",
       product_description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",

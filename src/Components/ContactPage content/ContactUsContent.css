@@ -4,10 +4,11 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  /* gap: 10px; */
 }
 
 .contact-us-details {
-  flex-basis: 50%;
+  flex-basis: 40%;
   padding: 20px;
   box-sizing: border-box;
 }
