@@ -23,7 +23,11 @@ const Footer = () => {
             <FaInfoCircle className='icon' /> About Us
           </h3>
           <div className='underline'></div>
-          <p>
+          <p
+            style={{
+              textAlign: "justify",
+            }}
+          >
             At Samadhan group, we are dedicated to serving our customers with
             products that embody Excellence and Economy. Our team is driven by
             the ethos of doing the 'RIGHT THING FIRST TIME AND EVERY TIME,'
@@ -35,12 +39,18 @@ const Footer = () => {
             <FaPhone className='icon' /> Get in Touch
           </h3>
           <div className='underline'></div>
-          <p>
+          <p
+            style={{
+              textAlign: "justify",
+            }}
+          >
             <FaMapMarkerAlt className='icon' /> Nilkanth Ind. Estate, Survey No.
             86, Plot No. 3, Village-Dhamni, Tal-Khalapur, Dist- Raigad,
             Maharashtra. 410206
             <br />
+            <br />
             <FaPhone className='icon' /> +91 9432648285
+            <br />
             <br />
             <FaEnvelope className='icon' /> samadhantincontainers@gmail.com
           </p>
