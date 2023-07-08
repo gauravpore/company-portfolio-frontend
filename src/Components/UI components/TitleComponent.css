@@ -1,19 +1,15 @@
 .title-container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  font-size: medium;
 }
 
 .title {
-  font-size: 4rem;
+  background: var(--bg-brown);
+  padding: 20px;
+  font-size: 2rem;
   color: #fff;
   text-transform: uppercase;
-}
-
-.title-underline {
-  width: 35%;
-  height: 8px;
-  background-color: #ff6600;
 }

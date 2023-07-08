@@ -11,14 +11,22 @@ const HeroImage = ({ imageUrl, children }) => {
     backgroundPosition: "center",
     height: isHomePage ? "100vh" : "50vh",
     width: "100vw",
+    display: "flex",
+    justifyContent: isHomePage ? "center" : "end",
+    alignItems: isHomePage ? "center" : "end",
   };
+
   const blackTintStyles = {
-    height: isHomePage ? "100vh" : "50vh",
+    height: isHomePage ? "100%" : "100%",
+    background: "rgba(0, 0, 0, 0.5)",
   };
+
   return (
     <div className='hero-image' style={heroImageStyles}>
       <div className='black-tint' style={blackTintStyles}></div>
-      <div className='content'>{children}</div>
+      <div className='wrapper'>
+        <div className='content'>{children}</div>
+      </div>
     </div>
   );
 };

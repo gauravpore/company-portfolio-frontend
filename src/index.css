@@ -1,3 +1,7 @@
+:root {
+  --bg-brown: #6f5733;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

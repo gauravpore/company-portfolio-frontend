@@ -4,9 +4,10 @@
   justify-content: center;
 }
 
-.HomePageTitle-Container h2 {
-  font-size: 3em;
+.HomePageTitle-Container h1 {
+  font-size: 8em;
   z-index: 2;
+  text-align: center;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
