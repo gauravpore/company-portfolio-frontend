@@ -27,6 +27,11 @@
   font-weight: 700;
 }
 
+.contact-details {
+  border: 2px black solid;
+  padding: 20px;
+}
+
 .map-container {
   flex-basis: 50%;
   height: 400px; /* Set an initial height */

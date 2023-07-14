@@ -19,13 +19,13 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
       <Routes>
-        <Route exact path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/products' element={<ProductsPage />} />
-        <Route path='/contact' element={<ContactPage />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
       <ScrollUpButton />

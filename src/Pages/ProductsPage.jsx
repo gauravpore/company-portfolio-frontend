@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../Components/UI components/HeroImage";
-import ProductImage from "../Assets/ProductsImage.jpg";
+import ProductImage from "../Assets/productsback.jpg";
 import Title from "../Components/UI components/TitleComponent";
 import ProductContent from "../Components/ProductPage Content/ProductContent";
 

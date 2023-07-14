@@ -1,37 +1,35 @@
 .about-container {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 50px auto;
 }
 
-.aboutus-section {
+/* .aboutus-section {
   background: url(../../Assets/AboutUsImage.jpg) no-repeat left;
   background-size: 90%;
   background-color: #fdfdfd;
   overflow: hidden;
   padding: 50px 0;
   border-radius: 20px;
-}
+} */
 
 .inner-container {
-  height: 40%;
-  width: 50%;
-  float: right;
-  background-color: #fdfdfd;
+  align-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
   padding: 50px;
-  border: 1px solid black;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px; */
+  /* font-size: 20px; */
 }
 
 .inner-container h1 {
   margin-bottom: 30px;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 700;
+  align-content: center;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 17px;
   color: #545454;
   line-height: 30px;
   text-align: justify;
