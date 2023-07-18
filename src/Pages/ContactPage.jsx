@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../Components/UI components/HeroImage";
-import ContactUsImage from "../Assets/ContactUsImage.jpg";
+import ContactUsImage from "../Assets/contactme.jpg";
 import Title from "../Components/UI components/TitleComponent";
 import ContactUsContent from "../Components/ContactPage content/ContactUsContent";
 

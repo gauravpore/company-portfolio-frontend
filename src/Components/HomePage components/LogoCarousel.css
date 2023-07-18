@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* gap: 20px; */
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -22,14 +21,12 @@
 .logo-image {
   display: block;
   width: 100%;
-  aspect-ratio: 3/2;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  height: auto;
   object-fit: contain;
   mix-blend-mode: color-burn;
-  height: 50px;
-  height: auto;
-  margin-right: 50px;
-  object-fit: contain;
   padding: 30px;
+  margin-right: 10px; /* Reduce the margin for smaller screens */
 }
 
 .logo-slide {
@@ -63,4 +60,11 @@
 
 .slick-next {
   right: -40px;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    max-width: 250px;
+    margin-right: 5px;
+  }
 }

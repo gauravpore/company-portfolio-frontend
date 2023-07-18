@@ -49,7 +49,7 @@ const HomeContent = () => {
             data-aos-duration='1000'
             data-aos-easing='ease-in-out'
             data-aos-mirror='true'
-            data-aos-once='false'
+            data-aos-once='true'
           >
             <img src={macro} alt='marco' className='marco' />
 
@@ -66,7 +66,7 @@ const HomeContent = () => {
                 data-aos-duration='1000'
                 data-aos-easing='ease-in-out'
                 data-aos-mirror='true'
-                data-aos-once='false'
+                data-aos-once='true'
                 key={index}
               >
                 <div className='icon'>{item.icon}</div>

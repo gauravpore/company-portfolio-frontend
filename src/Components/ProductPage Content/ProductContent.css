@@ -1,5 +1,5 @@
 :root {
-  --yellow: #f3d08c;
+  --yellow: #f3bc77;
   --grey: #d9d9d9;
 }
 
@@ -31,7 +31,23 @@
   color: #e78e09;
 }
 
-/* Polygoans */
+.name-product {
+  margin-top: 1cm;
+}
+.name-product h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* Polygons */
+
+.tinimage {
+  transition: transform 0.3s ease;
+}
+
+.tinimage:hover {
+  transform: scale(1.1);
+}
 
 .BrushInTin-Container {
   position: relative;
@@ -39,6 +55,12 @@
   margin: 40px auto;
   display: flex;
   flex-direction: row;
+  width: 80%;
+}
+
+.BrushInTin-Polygon-warper {
+  display: flex;
+  flex-direction: column;
 }
 
 .BrushInTin-Container .BrushInTin-Polygon-warper {
@@ -52,21 +74,114 @@
   z-index: 1;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  padding: 15px;
+}
+
+.BrushInTin-Polygon-first .content {
+  padding: 20px;
+}
+
+.BrushInTin-Polygon-first p {
+  margin-top: 10px;
+  width: 75%;
+  text-align: justify;
 }
 
 .BrushInTin-Container .BrushInTin-Polygon-second {
   position: absolute;
   width: 100%;
   background: var(--grey);
-  height: 80%;
+  height: 50%;
   bottom: 0;
   z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: first baseline;
+}
+
+.BrushInTin-Container img {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  /* margin-left: 250px; */
+}
+
+.DtTin-Container {
+  position: relative;
+  height: 400px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 80%;
+}
+.DtTin-Polygon-warper .DtTin-Polygon-first {
+  background: var(--yellow);
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  float: right;
+  padding: 15px;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: first baseline;
+}
+
+.DtTin-Container .DtTin-Polygon-warper {
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.DtTin-Polygon-first p {
+  margin-top: 10px;
+  text-align: left;
+  text-align: justify;
+}
+
+.DtTin-Polygon-first h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.DtTin-Polygon-first h3 {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.Dt-content {
+  padding-left: 25%;
+}
+
+.DtTin-Container .DtTin-Polygon-second {
+  position: absolute;
+  width: 100%;
+  background: var(--grey);
+  height: 50%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.DtTin-Container img {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  /* margin-left: 250px; */
 }
 
 .rounded-div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
 }
 
@@ -75,9 +190,31 @@
   align-items: center;
   justify-content: center;
   width: 80px;
-  height: 80px;
-  background-color: #e78e09;
+  height: 40px;
+  background-color: #a55233;
   color: #fff;
-  border-radius: 50%;
+  border-radius: 5%;
   font-size: 16px;
+}
+
+@media (max-width: 780px) {
+  .BrushInTin-Container img {
+    width: 25%;
+    bottom: 0;
+  }
+
+  .DtTin-Container img {
+    width: 25%;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .Products-Container {
+    font-size: xx-small;
+  }
+
+  .BrushInTin-Container img {
+    width: 25%;
+  }
 }

@@ -1,32 +1,46 @@
 import React from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  IoLocationOutline,
+  IoCallOutline,
+  IoMailOutline,
+} from "react-icons/io5";
+
 import "./Footer.css";
 
 const Footer = () => {
+  const getIntouchContent = [
+    {
+      icon: <IoLocationOutline className='icon' />,
+      text: (
+        <>
+          Nilkanth Ind. Estate, Survey No. 86, Plot No. 3, Village-Dhamni,
+          Tal-Khalapur, Dist- Raigad, Maharashtra. 410206
+        </>
+      ),
+    },
+    {
+      icon: <IoCallOutline className='icon' />,
+      text: "+91 9432648285",
+    },
+    {
+      icon: <IoMailOutline className='icon' />,
+      text: "samadhantincontainers@gmail.com",
+    },
+  ];
+
   return (
     <footer className='footer'>
       <div className='footer-container'>
         <div className='section'>
-          <h3>
-            <FaPhone className='icon-section' /> Get in Touch
-          </h3>
+          <h3>Get in Touch</h3>
           <div className='underline'></div>
           <div className='section-wrapper'>
-            <div className='getIntouch-content'>
-              <FaMapMarkerAlt className='icon' />
-              <p>
-                Nilkanth Ind. Estate, Survey No. 86, Plot No. 3, Village-Dhamni,
-                Tal-Khalapur, Dist- Raigad, Maharashtra. 410206
-              </p>
-            </div>
-            <div className='getIntouch-content'>
-              <FaPhone className='icon' />
-              <p>+91 9432648285</p>
-            </div>
-            <div className='getIntouch-content'>
-              <FaEnvelope className='icon' />
-              <p>samadhantincontainers@gmail.com</p>
-            </div>
+            {getIntouchContent.map((item, index) => (
+              <div className='getIntouch-content' key={index}>
+                <div className='icon'>{item.icon}</div>
+                <p>{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
         <div className='footer-text'>

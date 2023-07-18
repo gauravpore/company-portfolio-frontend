@@ -56,21 +56,21 @@ const LogoCarousel = () => {
         },
       },
       {
-        breakpoint: 992, // Adjust the breakpoint as per your requirements
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3, // Show 3 slides on screens with width less than 992px
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, // Adjust the breakpoint as per your requirements
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2, // Show 2 slides on screens with width less than 768px
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, // Adjust the breakpoint as per your requirements
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1, // Show 1 slide on screens with width less than 480px
+          slidesToShow: 1,
         },
       },
     ],

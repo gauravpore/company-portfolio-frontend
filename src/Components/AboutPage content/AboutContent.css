@@ -1,37 +1,23 @@
 .about-container {
   max-width: 1200px;
-  margin: 50px auto;
-}
-
-.aboutus-section {
-  background: url(../../Assets/AboutUsImage.jpg) no-repeat left;
-  background-size: 90%;
-  background-color: #fdfdfd;
-  overflow: hidden;
-  padding: 50px 0;
-  border-radius: 20px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 .inner-container {
-  height: 40%;
-  width: 50%;
-  float: right;
-  background-color: #fdfdfd;
-  padding: 50px;
-  border: 1px solid black;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px; */
+  height: 100%;
+  width: 100%;
 }
 
 .inner-container h1 {
   margin-bottom: 30px;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 700;
+  align-content: center;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 17px;
   color: #545454;
   line-height: 30px;
   text-align: justify;
@@ -46,40 +32,39 @@
 }
 
 .vision-section {
-  padding: 20px;
   margin-top: 40px;
   width: 100%;
   display: flex;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-
 .vision-content {
-  width: 50%;
+  width: 90%;
 }
-
 .vision-content p {
   text-align: justify;
   line-height: 1.8rem;
+  font-size: 17px;
 }
 
 .vision-image {
   padding: 20px;
-  width: 50%;
+  width: 100%;
   height: auto;
   display: flex;
 
   justify-content: center;
   align-items: center;
 }
-.vision-image {
-  flex: 1 1 50%;
+
+/* .vision-image {
+  flex: 1 1 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .vision-image img {
   max-width: 100%;
@@ -94,15 +79,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .inner-container {
-    padding: 80px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
   .about-section {
     background-size: 100%;
-    padding: 100px 40px;
   }
   .inner-container {
     width: 100%;
@@ -110,6 +91,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .about-container {
+    max-width: 750px;
+  }
   .vision-section {
     flex-direction: column;
     gap: 40px;
@@ -126,6 +110,6 @@
     padding: 0;
   }
   .inner-container {
-    padding: 60px;
+    /* padding: 60px; */
   }
 }

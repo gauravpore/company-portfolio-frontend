@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../Components/UI components/HeroImage";
-import HeroPageImage from "../Assets/HomePageImage.jpg";
+import HeroPageImage from "../Assets/hero.png";
 
 import HomePageTitle from "../Components/HomePage components/HomePageTitle";
 

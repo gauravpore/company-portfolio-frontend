@@ -19,3 +19,9 @@
   max-width: 1200px;
   margin: 40px;
 }
+
+.hero-image .content {
+  /* margin-right: 2cm;
+  margin-bottom: 2cm; */
+  margin: 40px;
+}

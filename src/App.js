@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import "./App.css";
@@ -10,7 +10,7 @@ import ContactPage from "./Pages/ContactPage";
 import Footer from "./Components/Footer/Footer";
 import ScrollUpButton from "./Components/UI components/ScrollUpButton";
 
-// scroll animation libray
+// scroll animation library
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,6 +18,13 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className='App'>
       <Navbar />

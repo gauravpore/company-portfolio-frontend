@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
 import "./ScrollUpButton.css";
 
 const ScrollUpButton = () => {
@@ -31,7 +32,9 @@ const ScrollUpButton = () => {
   return (
     <div className={`scroll-up-container ${backToTop ? "show" : ""}`}>
       <div className='scroll-up-button' onClick={scrollUp}>
-        <span className='arrow-up'>^</span>
+        <span className='arrow-up'>
+          <FaArrowUp />
+        </span>
       </div>
     </div>
   );

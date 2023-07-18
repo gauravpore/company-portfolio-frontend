@@ -2,14 +2,16 @@ import React from "react";
 import "./HeroImage.css"; // Import the CSS file for styling
 
 const HeroImage = ({ imageUrl, children }) => {
-  const isHomePage = window.location.pathname === "/"; // Check if it's the home page
+  const isHomePage = window.location.pathname === "/";
+  const isProductPage = window.location.pathname === "/products";
+  // const isAboutPage = window.location.pathname === "/about";
 
   // Inline styles for the hero image component
   const heroImageStyles = {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: isHomePage ? "100vh" : "50vh",
+    height: isHomePage || isProductPage ? "100vh" : "70vh",
     width: "100vw",
     display: "flex",
     justifyContent: isHomePage ? "center" : "end",
