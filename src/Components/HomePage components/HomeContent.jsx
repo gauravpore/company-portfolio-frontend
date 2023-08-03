@@ -1,8 +1,5 @@
 import React from "react";
 import "./HomeContent.css";
-import { TiTime } from "react-icons/ti";
-import { GiCutDiamond } from "react-icons/gi";
-import { FaThumbsUp } from "react-icons/fa";
 
 // logo carusal
 import LogoCarousel from "./LogoCarousel";
@@ -11,24 +8,26 @@ import macro from "../../Assets/macro.jpg";
 import people from "../../Assets/people.jpg";
 import electrician from "../../Assets/electrician.jpg";
 
-const data = [
+const cards = [
   {
-    icon: <FaThumbsUp />,
-    heading: "RELIABILITY",
-    content:
-      "Our company is renowned for its unwavering reliability in the adhesive industry, consistently delivering on-time solutions that exceed customer expectations.",
+    title: "Supplying Quality Products",
+    description:
+      "Our primary objective is to consistently supply our customers with high-quality products that meet or exceed their expectations. We strive to ensure that every product leaving our facilities adheres to rigorous quality standards, delivering value and satisfaction to our customers.",
   },
   {
-    icon: <TiTime />,
-    heading: "EXPERTISE",
-    content:
-      "Our knowledgeable team delivers tailored adhesive solutions, staying at the forefront of industry advancements.",
+    title: "Continuous Improvement",
+    description:
+      "We are committed to continuously improving all our operations in order to enhance customer satisfaction. By analyzing our processes, identifying areas for improvement, and implementing effective solutions, we aim to optimize our efficiency, quality, and overall performance.",
   },
   {
-    icon: <GiCutDiamond />,
-    heading: "QUALITY",
-    content:
-      "Our rigorous quality control measures ensure superior adhesive performance, durability, and safety, earning the trust of our clients.",
+    title: "Employee Training and Development",
+    description:
+      "We recognize the importance of employee development in achieving excellence. We invest in training programs that equip our employees with the necessary skills and knowledge for continuous improvement. By fostering a learning culture, we empower our workforce to contribute their best to our quality objectives.",
+  },
+  {
+    title: "Sound Management System",
+    description:
+      "We strive to implement a robust management system that supports and drives our quality objectives. By establishing clear processes, setting performance metrics, and monitoring key indicators, we ensure that our operations are aligned with our quality policy and objectives.",
   },
 ];
 
@@ -57,7 +56,7 @@ const HomeContent = () => {
             <img src={electrician} alt='people' />
           </div>
           <div className='home-whyChooseUs-right'>
-            {data.map((item, index) => (
+            {cards.map((item, index) => (
               <div
                 className='whyChooseUs-content'
                 data-aos='fade-left'
@@ -69,11 +68,8 @@ const HomeContent = () => {
                 data-aos-once='true'
                 key={index}
               >
-                <div className='icon'>{item.icon}</div>
-                <div className=''>
-                  <h2>{item.heading}</h2>
-                  <p>{item.content}</p>
-                </div>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
               </div>
             ))}
           </div>

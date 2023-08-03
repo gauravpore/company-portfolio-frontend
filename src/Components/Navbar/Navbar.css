@@ -1,3 +1,6 @@
+:root {
+  --brown-bg: #402a23;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -11,7 +14,7 @@
 }
 
 .navbar.scrolled {
-  background-color: #402a23;
+  background-color: var(--brown-bg);
   /* background: linear-gradient(
     87.4deg,
     rgb(255, 241, 165) 1.9%,

@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Preloader from "./Components/PreLoader/Preloader";
 
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
@@ -15,8 +16,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init();
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Set the desired delay time for the Preloader
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   const location = useLocation();
@@ -27,15 +38,21 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/products' element={<ProductsPage />} />
-        <Route path='/contact' element={<ContactPage />} />
-      </Routes>
-      <Footer />
-      <ScrollUpButton />
+      {loading ? (
+        <Preloader />
+      ) : (
+        <>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={<HomePage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/products' element={<ProductsPage />} />
+            <Route path='/contact' element={<ContactPage />} />
+          </Routes>
+          <Footer />
+          <ScrollUpButton />
+        </>
+      )}
     </div>
   );
 }

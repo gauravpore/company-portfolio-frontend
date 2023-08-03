@@ -3,6 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import "./Navbar.css";
 
+// import logo from "../../Assets/logos/logo-png.png";
+import logotransparent from "../../Assets/logos/logo-transparent-png.png";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +37,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className='container'>
         <Link to='/' className='logo'>
-          Samadhan Group
+          <img src={logotransparent} alt='logo' width={150} />
         </Link>
 
         <div

@@ -41,6 +41,7 @@ const LogoCarousel = () => {
 
   const settings = {
     dots: false,
+    arrows: false, // Remove the slide left and right arrows
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,

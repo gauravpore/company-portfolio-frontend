@@ -1,20 +1,18 @@
 .Content-container {
   width: 100%;
   overflow-x: hidden;
+  margin: 40px 0;
 }
 
 .Home-Container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-  z-index: 1;
 }
 
 .Home-Container .Home-title h1 {
   margin-top: 40px;
   text-transform: uppercase;
   color: black;
-  z-index: -1;
 }
 
 .Home-title {
@@ -30,8 +28,8 @@
   margin-top: 30px;
   display: flex;
   align-items: flex-start;
-  gap: 20px;
-  z-index: -1;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .image-container {
@@ -62,43 +60,49 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
 }
 
 .whyChooseUs-content {
+  background-color: var(--brown-bg);
+  color: #fff;
+  line-height: 1.4rem;
+  padding: 12px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  gap: 20px;
-  text-align: justify;
+  width: 100%;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
+.whyChooseUs-content:hover {
+  transform: scale(1.05) translateY(10px);
+  box-shadow: rgba(0, 0, 0, 0.25) 2.3px 2.3px 3px;
+}
 .whyChooseUs-content h2 {
-  margin-bottom: 20px;
+  color: var(--yellow);
 }
 
-.whyChooseUs-content .icon {
-  color: #ff6600;
-  font-size: 34px;
-  margin-right: 10px;
-}
-
-.icon img {
-  width: 16px;
-  height: 16px;
+.whyChooseUs-content p {
+  text-align: justify;
+  /* opacity: 0.9; */
 }
 
 @media (max-width: 1225px) {
-  .container {
+  .Home-Container {
     padding: 0 20px;
   }
 }
 
 @media (max-width: 992px) {
   .Home-Container {
-    max-width: 100%;
+    max-width: 900px;
   }
 
   .home-whyChooseUs {
@@ -119,7 +123,6 @@
   }
 
   .home-whyChooseUs-right {
-    margin-left: 0;
     margin-top: 10px;
   }
 
@@ -130,8 +133,12 @@
 }
 
 @media (max-width: 572px) {
-  .image-container {
-    max-width: 400px;
+  .Home-Container {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .Home-Container .Home-title h1 {
